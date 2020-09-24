@@ -3,19 +3,13 @@ import java.util.Scanner;
 public class ülesanded {
 
     public static void main(String[] args) {
-	// Ülesanne 14
-        Scanner inputNumber = new Scanner(System.in);
+	// Ülesanne 16 Create a program that asks the user for a number and tells whether the number is even or odd.
+        Scanner inputNumber1 = new Scanner(System.in);
         System.out.print("Type a number: ");
-        int number = Integer.parseInt(inputNumber.nextLine());
-
-        System.out.println("You typed " + number);
-
-
-        if (number > 0) {
-            System.out.println("The number is positive");
-        } else {
-            System.out.println("The number is negative");
-        }
-
+        int number = Integer.parseInt(inputNumber1.nextLine());
+        if(number % 2 == 0)
+            System.out.println(number + " is even");
+        else
+            System.out.println(number + " is odd");
     }
 }
