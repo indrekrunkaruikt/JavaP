@@ -3,35 +3,24 @@ import java.util.Scanner;
 public class ülesanded {
 
     public static void main(String[] args) {
-        // Ülesanne
-        Scanner inputNumber1 = new Scanner(System.in);
-        System.out.print("Add a year to be calculated: ");
-        double number = Integer.parseInt(inputNumber1.nextLine());
+        // Ülesanne 22
 
-
-        int numberBackInYearForm = (int)number;
-        boolean isDivisibleBy100 = number % 100 == 0;
-        boolean isDivisibleBy400 = number % 400 == 0;
-        boolean LeapYear = number % 4 == 0;
-        boolean IsALeapYear = false;
-
-        if(LeapYear)
-            {
-                if( isDivisibleBy100)
-                {
-                    if (isDivisibleBy400)
-                        IsALeapYear = true;
-                    else
-                        IsALeapYear = false;
-                }
-                else
-                    IsALeapYear = true;
+        String correctPassword = "carrot";
+        boolean isPasswordCorrect = false;
+        while(!isPasswordCorrect){
+            Scanner passwordInput = new Scanner(System.in);
+            System.out.print("Type in the password: ");
+            String password = passwordInput.nextLine(); // Reads a line of input from the user and assigns it
+            if (!(correctPassword.equals(password))) {  // true if the condition text.equals("milk") is false
+                System.out.println("Wrong!");
+                // System.out.println("Your password is " + password);
+            } else {
+                System.out.println("Right");
+                System.out.println("The secret is: The gold is buried between those 2 stones behind the oak tree.\n");
+                // System.out.println("Your password is " + password);
+                isPasswordCorrect = true;
             }
-            else {
-                IsALeapYear = false;
-            }
+        }
 
-        System.out.print("\n is divisible by 4 " + LeapYear + "\n is divisible by 100 " + isDivisibleBy100 + "\n Is divisible by 400 " + isDivisibleBy400);
-        System.out.print("\n IS it a leapyear:" + IsALeapYear);
     }
 }
