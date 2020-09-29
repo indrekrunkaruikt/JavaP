@@ -1,21 +1,20 @@
 import java.util.Scanner;
 
 public class ülesanded {
-
     public static void main(String[] args) {
-        // Ülesanne 32
+        // Ülesanne 36
 
-        int number = 1;
-        int result = 0;
         Scanner inputNumber = new Scanner(System.in);
-        System.out.print("Up to how high? : ");
-        int inputNumberMain = Integer.parseInt(inputNumber.nextLine());
+        System.out.print("Type the number of points: ");
+        int number = Integer.parseInt(inputNumber.nextLine());
 
-        while (number <= inputNumberMain) {
-
-            result = result + number;
-            number++;  // means the same as i = i + 1;
+        while(true){
+            if(number != -1){
+                number = Integer.parseInt(inputNumber.nextLine());
+            } else {
+                break;
+            }
         }
-        System.out.println(result);
+
     }
 }
