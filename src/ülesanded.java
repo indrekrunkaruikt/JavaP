@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ülesanded {
-    // Exercise 39.3: Printing a rectangle
+    // Exercise 39.4: Printing a left-aligned triangle
     private static void printStars(int amount) {
         // you can print one star with the command
         String stars = "";
@@ -22,7 +22,15 @@ public class ülesanded {
             printStars(aSideSize);
         }
     }
-    public static void main(String[] args) {
-        printRectangle(7, 2);
+    private static void printTriangle(int size) {
+        for (int i = 1; i <= size; i++) {
+            for(int j = 1; j <=i; j++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+        public static void main(String[] args) {
+        printTriangle(4);
     }
 }
