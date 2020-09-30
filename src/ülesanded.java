@@ -3,13 +3,12 @@ import java.util.Scanner;
 public class ülesanded {
     // Exercise 44
 
-    public static int least(int number1, int number2, int number3) {
-        return  Math.min(Math.min(number1, number2), number3);
+    public static double average(double number1, double number2, double number3, double number4) {
+        return (number1 + number2 + number3 + number4) / 4;
     }
 
     public static void main(String[] args) {
-        int answer =  least(2, 7, 3);
-        System.out.println("Least: " + answer);
+        double answer = average(4, 3, 6, 1);
+        System.out.println("average: " + answer);
     }
-
 }
