@@ -1,29 +1,15 @@
 import java.util.Scanner;
 
 public class ülesanded {
-    // Exercise 41
+    // Exercise 44
 
+    public static int least(int number1, int number2, int number3) {
+        return  Math.min(Math.min(number1, number2), number3);
+    }
 
     public static void main(String[] args) {
-        int randomNumber = (int)(100.0 * Math.random());
-        int amountOfGuesses = 1;
-        while(true){
-                Scanner inputNumber = new Scanner(System.in);
-                System.out.print("Type a number: ");
-                int number = Integer.parseInt(inputNumber.nextLine());
-                if(randomNumber == number){
-                    System.out.print("Congratulations, your guess is correct!\n");
-                    break;
-                }else if (randomNumber < number){
-                    System.out.print("It is smaller, guesses made: " + amountOfGuesses  +"\n");
-                    amountOfGuesses = amountOfGuesses +1;
-                }else{
-                    System.out.print("It is bigger, guesses made: " + amountOfGuesses  +"\n");
-                    amountOfGuesses = amountOfGuesses +1;
-                }
-
-
-        }
-
+        int answer =  least(2, 7, 3);
+        System.out.println("Least: " + answer);
     }
+
 }
