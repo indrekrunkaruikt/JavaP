@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class ülesanded {
     public static void main(String[] args) {
-        // Exercise 36.3: Summing and counting the numbers
-        int sumResult = 0;
-        int sumCount = 0;
+        // Exercise 36.4: Counting the average
+        double sumResult = 0;
+        double sumCount = 0;
+        double average = 0;
         Scanner inputNumber = new Scanner(System.in);
         System.out.print("Type the number of points: ");
-        int number = Integer.parseInt(inputNumber.nextLine());
+        double number = Integer.parseInt(inputNumber.nextLine());
 
         while(true){
             if(number != -1){
@@ -19,7 +20,9 @@ public class ülesanded {
                 break;
             }
          }
+        average = sumResult / sumCount;
         System.out.print(sumResult + "\n");
-        System.out.print(sumCount);
+        System.out.print(sumCount  + "\n");
+        System.out.print(average  + "\n");
     }
 }
