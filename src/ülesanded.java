@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ülesanded {
-    // Ülesanne 39.2
+    // Exercise 39.3: Printing a rectangle
     private static void printStars(int amount) {
         // you can print one star with the command
         String stars = "";
@@ -13,12 +13,16 @@ public class ülesanded {
         // call this command amount times
     }
     private static void printSquare(int sideSize) {
-        int height = 0;
         for (int i = 1; i <= sideSize; i++) {
             printStars(sideSize);
         }
     }
+    private static void printRectangle(int aSideSize, int bSideSize) {
+        for (int i = 1; i <= bSideSize; i++) {
+            printStars(aSideSize);
+        }
+    }
     public static void main(String[] args) {
-        printSquare(3);
+        printRectangle(7, 2);
     }
 }
