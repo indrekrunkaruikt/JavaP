@@ -16,5 +16,9 @@ public class DecreasingCounter {
         }
     }
 
+    public void reset(){
+        this.value = 0;
+    }
+
     // and here the rest of the methods
 }
