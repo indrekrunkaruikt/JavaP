@@ -4,25 +4,31 @@ import java.util.ArrayList;
 
 public class ülesanded {
 
-    // Exercise 61: Amount of items in a list
-    public static void countItems(ArrayList<String> list) {
+    // Exercise 62: Remove last
+    public static void removeLast(ArrayList<String> list) {
         Integer numberOfWords = 0;
         for (String word : list) {
             numberOfWords = numberOfWords +1;
         }
-        System.out.println(numberOfWords);
-
+        list.remove(0);
     }
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> brothers = new ArrayList<String>();
+        brothers.add("Dick");
+        brothers.add("Henry");
+        brothers.add("Michael");
+        brothers.add("Bob");
 
+        System.out.println("brothers:");
+        System.out.println(brothers);
 
-            list.add("Hallo");
-            list.add("Ciao");
-            list.add("Hello");
-            System.out.println("There are this many items in the list:");
-            countItems(list);
+        // sorting brothers
+        Collections.sort(brothers);
 
+        // removing the last item
+        removeLast(brothers);
+
+        System.out.println(brothers);
     }}
 
 
