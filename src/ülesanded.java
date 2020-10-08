@@ -4,15 +4,9 @@ import java.util.ArrayList;
 
 public class ülesanded {
 
-    // Exercise 64: Average of numbers
-    public static double average(ArrayList<Integer> list) {
-        double length = list.size();
-        double sum = 0;
-        for (Integer number : list) {
-            sum = sum + number;
-        }
-        double average = sum/length;
-        return average;
+    // Exercise 66: The Greatest
+    public static int greatest(ArrayList<Integer> list) {
+       return Collections.max(list);
     }
 
     public static void main(String[] args) {
@@ -21,7 +15,7 @@ public class ülesanded {
         list.add(2);
         list.add(7);
         list.add(2);
-        System.out.println("The average is: " + average(list));
+        System.out.println("The greatest number is: " + greatest(list));
     }
     }
 
