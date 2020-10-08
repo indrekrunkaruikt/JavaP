@@ -24,7 +24,11 @@ public class LyyraCard {
         }
     }
     public void loadMoney(double amount) {
-        this.balance = this.balance + amount;
+        if(this.balance < amount){
+            this.balance = this.balance + amount;
+        } else {
+            this.balance = this.balance;
+        }
     }
 
 }
