@@ -4,35 +4,27 @@ import java.util.ArrayList;
 
 public class ülesanded {
 
-    // Exercise 69: Palindrome
-    public static boolean palindrome(String text) {
-        String reverseText = "";
-        int i = text.length()-1;
-        while(i >= 0){
-            char symbol = text.charAt(i);
-            reverseText += symbol;
-            i--;
-        }
-        System.out.println(reverseText + " " + text);
-        if(reverseText != text){
-            return true;
-        } else{
-            return false;
-        }
-
+    // Exercise 70: Combining ArrayLists
+    public static void combine(ArrayList<Integer> first, ArrayList<Integer> second){
+        first.addAll(second);
     }
 
     public static void main(String[] args) {
-        Scanner reader = new Scanner(System.in);
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
 
-        System.out.println("Type a text: ");
-        String text = reader.nextLine();
-        if (palindrome(text)) {
-            System.out.println("The text is a palindrome!");
-        } else {
-            System.out.println("The text is not a palindrome!");
-        }
+        list1.add(4);
+        list1.add(3);
 
+        list2.add(5);
+        list2.add(10);
+        list2.add(7);
+
+        combine(list1, list2);
+
+        System.out.println(list1); // prints [4, 3, 5, 10, 7]
+
+        System.out.println(list2); // prints [5, 10, 7]
     }
 }
 
