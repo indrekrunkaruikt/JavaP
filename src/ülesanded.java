@@ -4,32 +4,26 @@ import java.util.ArrayList;
 
 public class ülesanded {
 
-    // Exercise 62: Remove last
-    public static void removeLast(ArrayList<String> list) {
-        Integer numberOfWords = 0;
-        for (String word : list) {
-            numberOfWords = numberOfWords +1;
+    // Exercise 64: Average of numbers
+    public static double average(ArrayList<Integer> list) {
+        double length = list.size();
+        double sum = 0;
+        for (Integer number : list) {
+            sum = sum + number;
         }
-        list.remove(0);
+        double average = sum/length;
+        return average;
     }
+
     public static void main(String[] args) {
-        ArrayList<String> brothers = new ArrayList<String>();
-        brothers.add("Dick");
-        brothers.add("Henry");
-        brothers.add("Michael");
-        brothers.add("Bob");
-
-        System.out.println("brothers:");
-        System.out.println(brothers);
-
-        // sorting brothers
-        Collections.sort(brothers);
-
-        // removing the last item
-        removeLast(brothers);
-
-        System.out.println(brothers);
-    }}
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(3);
+        list.add(2);
+        list.add(7);
+        list.add(2);
+        System.out.println("The average is: " + average(list));
+    }
+    }
 
 
 
