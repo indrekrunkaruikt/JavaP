@@ -11,4 +11,14 @@ public class LyyraCard {
         String message = "The card has "+ this.balance +" euros";
         return message;
     }
+    public void payEconomical() {
+        // write code here
+        this.balance = this.balance - 2.50;
+    }
+
+    public void payGourmet() {
+        // write code here
+        this.balance = this.balance - 4.00;
+
+    }
 }
