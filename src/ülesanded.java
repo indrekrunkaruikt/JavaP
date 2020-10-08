@@ -4,25 +4,25 @@ import java.util.ArrayList;
 
 public class ülesanded {
 
-    // Exercise 60: Words in alphabetical order
-
-    public static void main(String[] args) {
-        ArrayList<String> words = new ArrayList<String>();
-
-        while(true){
-            System.out.print("Type a word: ");
-            Scanner reader = new Scanner(System.in);
-            String text = reader.nextLine();
-            Collections.sort(words);
-            if ( words.contains(text) ) {  // could also be: word.equals("")
-                for (String word : words) {
-                    System.out.println( word );
-                }
-                break;
-            }
-            words.add(text);
-
+    // Exercise 61: Amount of items in a list
+    public static void countItems(ArrayList<String> list) {
+        Integer numberOfWords = 0;
+        for (String word : list) {
+            numberOfWords = numberOfWords +1;
         }
+        System.out.println(numberOfWords);
+
+    }
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<String>();
+
+
+            list.add("Hallo");
+            list.add("Ciao");
+            list.add("Hello");
+            System.out.println("There are this many items in the list:");
+            countItems(list);
+
     }}
 
 
