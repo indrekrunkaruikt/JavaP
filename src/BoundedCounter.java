@@ -23,4 +23,9 @@ public class BoundedCounter {
         return ""+this.value+"";
     }
 
+    public int getValue() {
+        // write here code that returns the value
+        return this.value;
+    }
+
 }
