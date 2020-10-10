@@ -1,11 +1,14 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Counter counter = new Counter(100, false);
-        counter.increase(20);
-        counter.value();
-        counter.decrease(20);
-        counter.value();
+        LyyraCard cardOfPekka = new LyyraCard(10);
+
+        System.out.println("money on the card " + cardOfPekka.balance() );
+        boolean succeeded = cardOfPekka.pay(8);
+        System.out.println("money taken: " + succeeded );
+        System.out.println("money on the card " + cardOfPekka.balance() );
+
+        succeeded = cardOfPekka.pay(4);
+        System.out.println("money taken: " + succeeded );
+        System.out.println("money on the card " + cardOfPekka.balance() );
     }
 }
