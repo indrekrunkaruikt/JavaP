@@ -1,7 +1,8 @@
 public class NumberStatistics {
     private int amountOfNumbers;
     private int sumOfNumbers = 0;
-
+    private int sumOfEven = 0;
+    private int sumOfOdd = 0;
     public NumberStatistics() {
         // initialize here the object variable amountOfNumber
     }
@@ -20,7 +21,6 @@ public class NumberStatistics {
         // code here
         return this.sumOfNumbers;
     }
-
     public double average() {
 
         // code here
