@@ -14,15 +14,27 @@ public class Counter {
     }
     public void increase() {
         // write here the code that decrements the value of counter by one
-
             this.value++;
-
+    }
+    public void increase(int increaseAmount) {
+        // write here the code that decrements the value of counter by one
+        if(increaseAmount <= 0){
+            this.value = this.value;
+        }else {
+            this.value = this.value + increaseAmount;
+        }
     }
     public void decrease() {
         // write here the code that decrements the value of counter by one
-
             this.value--;
-
+    }
+    public void decrease(int decreaseAmount) {
+        // write here the code that decrements the value of counter by one
+        if(decreaseAmount <= 0){
+            this.value = this.value;
+        }else {
+            this.value = this.value - decreaseAmount;
+        }
     }
     public void reset(){
         this.value = 0;

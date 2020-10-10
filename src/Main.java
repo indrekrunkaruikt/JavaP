@@ -2,11 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Counter counter = new Counter(0, false);
+        Counter counter = new Counter(100, false);
+        counter.increase(20);
         counter.value();
-        counter.decrease();
-        counter.value();
-        counter.increase();
+        counter.decrease(20);
         counter.value();
     }
 }
