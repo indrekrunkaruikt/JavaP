@@ -15,4 +15,10 @@ public class Apartment {
             return false;
         }
     }
+    public int priceDifference(Apartment otherApartment){
+        Integer apartmentPrice = squareMeters * pricePerSquareMeter;
+        Integer otherAparmentPrice = otherApartment.squareMeters * otherApartment.pricePerSquareMeter;
+        Integer differenceBetweenTheApartments = apartmentPrice - otherAparmentPrice;
+        return differenceBetweenTheApartments;
+    }
 }
