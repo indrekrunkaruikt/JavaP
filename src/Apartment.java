@@ -21,4 +21,14 @@ public class Apartment {
         Integer differenceBetweenTheApartments = apartmentPrice - otherAparmentPrice;
         return differenceBetweenTheApartments;
     }
+    public boolean moreExpensiveThan(Apartment otherApartment){
+        Integer apartmentPrice = squareMeters * pricePerSquareMeter;
+        Integer otherAparmentPrice = otherApartment.squareMeters * otherApartment.pricePerSquareMeter;
+        Integer differenceBetweenTheApartments = apartmentPrice - otherAparmentPrice;
+        if(differenceBetweenTheApartments <= 0){
+            return false;
+        }else {
+            return true;
+        }
+    }
 }
