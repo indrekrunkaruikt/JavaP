@@ -57,7 +57,10 @@ public class CashRegister {
             return false;
         }
     }
-
+    public void loadMoneyToCard(LyyraCard card, double sum) {
+        // ...
+        card.loadMoney(sum);
+    }
     public String toString() {
         return "money in register "+cashInRegister+" economical lunches sold: "+economicalSold+" gourmet lunches sold: "+gourmetSold;
     }
