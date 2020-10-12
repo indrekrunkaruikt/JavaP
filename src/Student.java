@@ -14,7 +14,7 @@ public class Student {
         return this.studentNumber;
     }
     public String toString(){
-        String returnMessage = getName() + getStudentNumber();
+        String returnMessage = getName() + " (" +getStudentNumber()+")";
         return returnMessage;
     }
 }
