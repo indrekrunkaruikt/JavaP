@@ -7,7 +7,6 @@ public class Student {
         this.studentNumber = studentNumber;
     }
     public String getName(){
-
         return this.name;
     }
     public String getStudentNumber(){

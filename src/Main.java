@@ -7,6 +7,7 @@ public class Main {
         Scanner reader = new Scanner(System.in);
         String studentName = "";
         String studentNumber = "";
+        String searchInputValue = "";
         while(true){
             System.out.println("Name: ");
             studentName = reader.nextLine();
@@ -21,5 +22,17 @@ public class Main {
                 list.add( (new Student(studentName, studentNumber)));
             }
         }
+        System.out.println("Search: ");
+        searchInputValue = reader.nextLine();
+        while(true){
+            for (Student StudentItem : list) {
+                if(StudentItem.getName().contains(searchInputValue)){
+                    System.out.println(StudentItem);
+                }
+            }
+            break;
+        }
+
+
     }
 }
