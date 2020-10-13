@@ -1,15 +1,15 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Main{
+    int nullvalue = 0;
     public static void main(String[] args) {
-        Clock clock = new Clock(23, 59, 50);
+        int i = 10;
 
-        int i = 0;
-        while( i < 20) {
-            System.out.println( clock );
-            clock.tick();
-            i++;
+        for (int j = 0; j < i; j++) {
+            for (int k = 0; k < i; k++) {
+                System.out.print(j);
+            }
+            System.out.print("\n");
         }
     }
 }
