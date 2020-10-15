@@ -26,11 +26,11 @@ public class Clock {
         } else {
             this.seconds.next();
         }
+
     }
 
     public String toString() {
         // returns the string representation
-        String result = this.hours + ":" + this.minutes + ":" + this.seconds;
-        return  result;
+        return this.hours + ":" + this.minutes + ":" + this.seconds;
     }
 }
