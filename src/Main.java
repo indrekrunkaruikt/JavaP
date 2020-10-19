@@ -1,11 +1,15 @@
+import java.util.HashMap;
+
 public class Main{
     public static void main(String[] args) {
-        int i = -1;
-        for (int j = 9; j > i; j--) {
-            for (int k = j; k > i; k--) {
-                System.out.print(k + " ");
+        HashMap<String, String> nicknames = new HashMap<String, String>();
+        nicknames.put("matti", "mage");
+        nicknames.put("mikael", "mixu");
+        nicknames.put("arto", "arppa");
+        for (String i : nicknames.keySet()) {
+            if(i == "matti"){
+                System.out.println("key: " + i + " value: " + nicknames.get(i));
             }
-            System.out.print("\n");
         }
     }
 }
